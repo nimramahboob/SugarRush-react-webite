@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Lora:wght@400;700&family=Quattrocento:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    @apply text-black;
+    @apply font-lora;
+    @apply bg-white
+}
+
+.main {
+    position: relative;
+    height: 55vh;
+    background-image: url(./assets//images//home-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-main {
+    height: 70vh;
+    width: 100%;
+    background-image: url(./assets/images/about-page-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* z-index: -20; */
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        height: 70vh;
+        border-radius: 1rem;
+    }
+    .about-main {
+        height: 80vh;
+    }
+}
